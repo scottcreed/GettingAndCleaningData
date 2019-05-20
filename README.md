@@ -2,7 +2,9 @@
 
 This is the final project for the Coursera Getting and Cleaning Data course.
 
-The script file **run_analysis.R** contains all the logic to produce the two tidy datasets:
+**codebook.md** contains detailed information about how the tidy datasets are produced.
+
+**run_analysis.R** contains all the logic to produce the two tidy datasets:
 - Data\GettingAndCleaningDataFinal.csv
 - Data\GettingAndCleaningDataAvgMeanAndStd.csv
 
