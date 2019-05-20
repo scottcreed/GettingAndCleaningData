@@ -13,8 +13,8 @@ This file is the tidy dataset containing all observations for mean and std measu
 
 The final tidy dataset is written to **Data\GettingAndCleaningDataFinal.csv**
 
-## GettingAndCleaningDataAvgMeandAndStd.csv
+## GettingAndCleaningDataAvgMeandAndStd.txt
 This dataset contains averages of all of the measures from the dataset above.  The averages are calculated
 for each activity/subject combination. 
 
-This dataset is then written to **Data\GettingAndCleaningDataAvgMeanAndStd.csv**
+This dataset is then written to **Data\GettingAndCleaningDataAvgMeanAndStd.txt**
