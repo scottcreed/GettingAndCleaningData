@@ -89,4 +89,4 @@ avgData <- aggregate(select(finalData,-(c("activityId","activityName","subjectId
 names(avgData) <- paste("avg_",names(avgData),sep="")
 names(avgData)[1:3] <- c("activityId","activityName","subjectId")
 avgData <- arrange(avgData,activityId,subjectId)
-write.table(avgData,".\\Data\\GettingAndCleaningDataAvgMeanAndStd.csv",row.names = FALSE)
+write.table(avgData,".\\Data\\GettingAndCleaningDataAvgMeanAndStd.txt",row.names = FALSE)

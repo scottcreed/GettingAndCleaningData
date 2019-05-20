@@ -11,7 +11,7 @@ This data is described in:
 
 The script file **run_analysis.R** contains all the logic to read the source data and produce the two tidy datasets:
 - Data\GettingAndCleaningDataFinal.csv
-- Data\GettingAndCleaningDataAvgMeanAndStd.csv
+- Data\GettingAndCleaningDataAvgMeanAndStd.txt
 
 ## GettingAndCleaningDataFinal.csv
 This file is the tidy dataset containing all observations for mean and std measures.  It is produced as follows:
@@ -33,10 +33,10 @@ This file is the tidy dataset containing all observations for mean and std measu
 
 The final tidy dataset is written to **Data\GettingAndCleaningDataFinal.csv**
 
-## GettingAndCleaningDataAvgMeandAndStd.csv
+## GettingAndCleaningDataAvgMeandAndStd.txt
 This dataset contains averages of all of the measures from the dataset above.  The averages are
 calculated for each activity/subject combination. 
 
 Names of measures are prepended with avg_ to make it clear that they are averages of the original observations.
 
-This dataset is then written to **Data\GettingAndCleaningDataAvgMeanAndStd.csv**
+This dataset is then written to **Data\GettingAndCleaningDataAvgMeanAndStd.txt**
