@@ -26,7 +26,7 @@ if (!file.exists(zipFileName))
 }
 
 ##Extract the data from the zip file
-unzip(fileName,exdir = dataDirectory)
+unzip(zipFileName,exdir = dataDirectory)
 
 ##------Common names---------------
 ##Read the feature (names)
@@ -81,11 +81,12 @@ meanStdData <- select(allData,c("subjectId","activityId",meanStdNames[,1]))
 ##------3: Add descriptive activity names-----
 ##Add the activity name into the data
 finalData <- merge(activityNames,meanStdData,by = "activityId")
-View(finalData)
+finalData <- arrange(finalData,activityId,subjectId)
+write.csv(finalData,".\\Data\\GettingAndCleaningDataFinal.csv")
 
 ##------5: Average all of the columns by Activity and Subject
 avgData <- aggregate(select(finalData,-(c("activityId","activityName","subjectId"))),list(finalData$activityId,finalData$activityName,finalData$subjectId),mean)
 names(avgData) <- paste("avg_",names(avgData),sep="")
 names(avgData)[1:3] <- c("activityId","activityName","subjectId")
 avgData <- arrange(avgData,activityId,subjectId)
-View(avgData)
+write.csv(avgData,".\\Data\\GettingAndCleaningDataAvgMeanAndStd.csv")
