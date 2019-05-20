@@ -6,7 +6,7 @@ This is the final project for the Coursera Getting and Cleaning Data course.
 
 **run_analysis.R** contains all the logic to produce the two tidy datasets:
 - Data\GettingAndCleaningDataFinal.csv
-- Data\GettingAndCleaningDataAvgMeanAndStd.csv
+- Data\GettingAndCleaningDataAvgMeanAndStd.txt
 
 ## GettingAndCleaningDataFinal.csv
 This file is the tidy dataset containing all observations for mean and std measures for each activity and subject.
