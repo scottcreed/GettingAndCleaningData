@@ -2,8 +2,12 @@
 
 This is the final project for the Coursera Getting and Cleaning Data course.
 
-## UCI HAR Dataset\GettingAndCleaningDataFinal.csv
-The script file run_analysis.R contains all the logic to produce the initial tidy dataset:
+The script file **run_analysis.R** contains all the logic to produce the two tidy datasets:
+- Data\GettingAndCleaningDataFinal.csv
+- Data\GettingAndCleaningDataAvgMeanAndStd.csv
+
+## GettingAndCleaningDataFinal.csv
+This file is the tidy dataset containing all observations for mean and std measures.  It is produced as follows:
 - Download the zip file from the source to a Data directory (which is created if it does not exist)
 - Extract the zip file to the Data Directory
 - Reads the **UCI HAR Dataset\features.txt** file which provides names for the 561 columns in the observations
@@ -22,9 +26,10 @@ The script file run_analysis.R contains all the logic to produce the initial tid
 
 The final tidy dataset is written to **Data\GettingAndCleaningDataFinal.csv**
 
-## UCI HAR Dataset\GettingAndCleaningDataAvgMeandAndStd.csv
-The dataset is then processed to calculate the averages of the measures by activity and subject.
+## GettingAndCleaningDataAvgMeandAndStd.csv
+This dataset contains averages of all of the measures from the dataset above.  The averages are
+calculated for each activity/subject combination. 
 
 Names of measures are prepended with avg_ to make it clear that they are averages of the original observations.
 
-This dataset is written to **Data\GettingAndCleaningDataAvgMeanAndStd.csv**
+This dataset is then written to **Data\GettingAndCleaningDataAvgMeanAndStd.csv**
